@@ -1,0 +1,1 @@
+2026-01-30 01:19:07.223 [main] WARN  org.springframework.context.annotation.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [com.example.task.config.HibernateConfig]
