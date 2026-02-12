@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - include:
+      file: liquibase/changelog/V1.1__add_index.sql
+      relativeToChangelogFile: false
+
+  - include:
+      file: liquibase/changelog/V1.2__add_consts_for_data_integrity.sql
+      relativeToChangelogFile: false
+
+  - include:
+      file: liquibase/changelog/V1.3__add_foreign_key_consts.sql
+      relativeToChangelogFile: false
