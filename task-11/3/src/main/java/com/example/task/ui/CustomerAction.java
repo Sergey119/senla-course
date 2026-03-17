@@ -1,0 +1,166 @@
+package com.example.task.ui;
+
+import com.example.task.dao.CustomerDAO;
+import com.example.task.model.Customer;
+
+import java.util.List;
+
+public class CustomerAction implements IAction {
+
+    private final CustomerDAO customerDAO;
+
+    private static final Integer testId1 = 201;
+    private static final Integer testId2 = 202;
+    private static final Integer testId3 = 203;
+
+    public CustomerAction(CustomerDAO customerDAO) {
+        this.customerDAO = customerDAO;
+    }
+
+    @Override
+    public void execute() {
+        System.out.println("--- Testing CustomerDAO ---");
+
+        try {
+            testCreateCustomers();
+            testExistsById();
+            testFindById();
+            testFindAll();
+            testUpdate();
+            testDelete();
+
+            System.out.println("CustomerDAO testing complete!");
+
+        } catch (Exception e) {
+            System.err.println("Critical error while testing CustomerDAO: " + e.getMessage());
+            e.printStackTrace();
+        } finally {
+            cleanupTestData();
+        }
+    }
+
+    private void testCreateCustomers() {
+        System.out.println("1. Creating customers (id is specified via a setter).");
+
+        var customer1 = new Customer("Margaret Rodriguez");
+        customer1.setId(testId1);
+
+        var customer2 = new Customer("George Morris");
+        customer2.setId(testId2);
+
+        try {
+            customerDAO.save(customer1);
+            customerDAO.save(customer2);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        System.out.println("Records have been created in the database.");
+        customerDAO.findById(testId1).ifPresent(System.out::println);
+        customerDAO.findById(testId2).ifPresent(System.out::println);
+    }
+
+    private void testExistsById() {
+        System.out.println("2. Testing existsById().");
+
+        try {
+            var exists = customerDAO.existsById(256);
+            System.out.println("Executing method -> existsById(256): " + exists + " (expected false)");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        try {
+            var exists = customerDAO.existsById(testId1);
+            System.out.println("Executing method -> existsById(" + testId1 + "): " + exists + " (expected true)");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void testFindById() {
+        System.out.println("3. Testing findById().");
+
+        try {
+            customerDAO.findById(256).ifPresentOrElse(
+                    c -> System.out.println("Found (wrong! it shouldn't have been found): " + c),
+                    () -> System.out.println("Not found (expected)")
+            );
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        try {
+            customerDAO.findById(testId1).ifPresentOrElse(
+                    c -> System.out.println("Found (expected): " + c),
+                    () -> System.out.println("Not found")
+            );
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void testFindAll() {
+        System.out.println("4. Testing retrieval of all records from the database.");
+
+        try {
+            var list = customerDAO.findAll();
+            System.out.println("Total records: " + list.size());
+            System.out.println(list);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void testUpdate() {
+        System.out.println("5. Testing update");
+
+        try {
+            var customer = new Customer("Deborah Kelly");
+            customer.setId(testId1);
+
+            customerDAO.update(customer);
+            customerDAO.findById(testId1).ifPresentOrElse(
+                    c -> System.out.println("Record updated: " + c),
+                    () -> System.out.println("Error, not found!")
+            );
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void testDelete() {
+        System.out.println("6. Testing delete");
+
+        try {
+            var forDelete = new Customer("Pamela Jones");
+            forDelete.setId(testId3);
+
+            try {
+                customerDAO.save(forDelete);
+                System.out.println("A record has been created for deletion: " + forDelete);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            var before = customerDAO.existsById(testId3);
+            customerDAO.delete(testId3);
+            var after = customerDAO.existsById(testId3);
+            System.out.println("Delete: before=" + before + ", after=" + after);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void cleanupTestData() {
+        System.out.println("Clean");
+        try {
+            customerDAO.delete(testId1);
+            customerDAO.delete(testId2);
+            customerDAO.delete(testId3);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
