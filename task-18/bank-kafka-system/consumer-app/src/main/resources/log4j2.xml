@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="30">
+    <Properties>
+        <Property name="LOG_PATTERN">%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</Property>
+        <Property name="APP_LOG_ROOT">./logs/consumer</Property>
+    </Properties>
+
+    <Appenders>
+        <!-- Консоль -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </Console>
+
+        <!-- Файл приложения -->
+        <RollingFile name="ApplicationLog"
+                     fileName="${APP_LOG_ROOT}/application.log"
+                     filePattern="${APP_LOG_ROOT}/application-%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10MB"/>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+
+        <!-- Файл для обработки сообщений -->
+        <RollingFile name="ProcessingLog"
+                     fileName="${APP_LOG_ROOT}/processing.log"
+                     filePattern="${APP_LOG_ROOT}/processing-%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="5"/>
+        </RollingFile>
+
+        <!-- Файл для ошибок -->
+        <RollingFile name="ErrorLog"
+                     fileName="${APP_LOG_ROOT}/error.log"
+                     filePattern="${APP_LOG_ROOT}/error-%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="5"/>
+            <ThresholdFilter level="ERROR" onMatch="ACCEPT" onMismatch="DENY"/>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <!-- Логгер для обработки сообщений -->
+        <Logger name="com.bank.consumer.listener.KafkaMessageListener" level="INFO" additivity="false">
+            <AppenderRef ref="ProcessingLog"/>
+            <AppenderRef ref="Console"/>
+        </Logger>
+
+        <Logger name="com.bank.consumer.service.TransferProcessingService" level="INFO" additivity="false">
+            <AppenderRef ref="ProcessingLog"/>
+            <AppenderRef ref="Console"/>
+        </Logger>
+
+        <!-- Логгер для ошибок -->
+        <Logger name="com.bank" level="ERROR" additivity="false">
+            <AppenderRef ref="ErrorLog"/>
+            <AppenderRef ref="Console"/>
+        </Logger>
+
+        <!-- Корневой логгер -->
+        <Root level="INFO">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="ApplicationLog"/>
+        </Root>
+    </Loggers>
+</Configuration>
