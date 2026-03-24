@@ -1,0 +1,115 @@
+2026-01-24 12:55:29.536 [main] INFO  com.example.task.ui.OrderAction - Testing the Hibernate method for creating an order record with technicians
+2026-01-24 12:55:29.555 [main] ERROR com.example.task.ui.OrderAction - Error saving order with technicians
+2026-01-24 12:55:29.555 [main] INFO  com.example.task.ui.OrderAction - Start of testing the Hibernate method for existing order record
+2026-01-24 12:55:29.565 [main] INFO  com.example.task.ui.OrderAction - Completion of testing the Hibernate method for existing order record
+2026-01-24 12:55:29.566 [main] INFO  com.example.task.ui.OrderAction - Start of testing the Hibernate method for finding order record
+2026-01-24 12:55:29.568 [main] ERROR com.example.task.ui.OrderAction - Error finding order by id: null
+2026-01-24 12:55:29.568 [main] INFO  com.example.task.ui.OrderAction - Completion of testing the Hibernate method for finding order record
+2026-01-24 12:55:29.568 [main] INFO  com.example.task.ui.OrderAction - Start of testing the Hibernate method for retrieval of all records
+2026-01-24 12:55:29.571 [main] ERROR com.example.task.ui.OrderAction - Error finding all orders
+2026-01-24 12:55:29.571 [main] INFO  com.example.task.ui.OrderAction - Completion of testing the Hibernate method for retrieval of all records
+2026-01-24 12:55:29.571 [main] INFO  com.example.task.ui.OrderAction - Start of testing the Hibernate method for specific order search methods
+2026-01-24 12:55:29.576 [main] ERROR com.example.task.ui.OrderAction - Error finding orders by status: PENDING
+2026-01-24 12:55:29.576 [main] INFO  com.example.task.ui.OrderAction - Completion of testing the Hibernate method for specific order search methods
+2026-01-24 12:55:29.576 [main] INFO  com.example.task.ui.OrderAction - Start of testing the Hibernate method for sorting order records
+2026-01-24 12:55:29.581 [main] ERROR com.example.task.ui.OrderAction - Error finding orders sorted by startDate
+2026-01-24 12:55:29.586 [main] ERROR com.example.task.ui.OrderAction - Error finding orders sorted by cost
+2026-01-24 12:55:29.586 [main] INFO  com.example.task.ui.OrderAction - Completion of testing the Hibernate method for sorting order records
+2026-01-24 12:55:29.586 [main] INFO  com.example.task.ui.OrderAction - Start of testing the Hibernate method for technician relations
+2026-01-24 12:55:29.586 [main] ERROR com.example.task.ui.OrderAction - Error adding technician to order
+2026-01-24 12:55:29.587 [main] INFO  com.example.task.ui.OrderAction - Completion of testing the Hibernate method for technician relations
+2026-01-24 12:55:29.587 [main] INFO  com.example.task.ui.OrderAction - Start of testing the Hibernate method for status update
+2026-01-24 12:55:29.587 [main] ERROR com.example.task.ui.OrderAction - Error finding order by id: null
+2026-01-24 12:55:29.587 [main] INFO  com.example.task.ui.OrderAction - Completion of testing the Hibernate method for status update
+2026-01-24 12:55:29.587 [main] INFO  com.example.task.ui.OrderAction - Start of testing the Hibernate method for time shift
+2026-01-24 12:55:29.587 [main] ERROR com.example.task.ui.OrderAction - Error finding order by id: null
+2026-01-24 12:55:29.588 [main] INFO  com.example.task.ui.OrderAction - Completion of testing the Hibernate method for time shift
+2026-01-24 12:55:29.588 [main] INFO  com.example.task.ui.OrderAction - Start of testing the Hibernate method for find orders by technician
+2026-01-24 12:55:29.594 [main] INFO  com.example.task.ui.OrderAction - Completion of testing the Hibernate method for find orders by technician
+2026-01-24 12:55:29.594 [main] INFO  com.example.task.ui.OrderAction - Start of testing the Hibernate method for date range search
+2026-01-24 12:55:29.598 [main] INFO  com.example.task.ui.OrderAction - Completion of testing the Hibernate method for date range search
+2026-01-24 12:55:29.598 [main] INFO  com.example.task.ui.OrderAction - Start of testing the Hibernate method for showing running orders.
+2026-01-24 12:55:29.602 [main] ERROR com.example.task.ui.OrderAction - Error finding IN_PROGRESS orders sorted by startDate
+2026-01-24 12:55:29.606 [main] ERROR com.example.task.ui.OrderAction - Error finding IN_PROGRESS orders sorted by cost
+2026-01-24 12:55:29.606 [main] INFO  com.example.task.ui.OrderAction - Completion of testing the Hibernate method for showing running orders
+2026-01-24 12:55:29.607 [main] INFO  com.example.task.ui.OrderAction - Start of testing the Hibernate method for update order.
+2026-01-24 12:55:29.607 [main] ERROR com.example.task.ui.OrderAction - Error finding order by id: null
+2026-01-24 12:55:29.607 [main] INFO  com.example.task.ui.OrderAction - Completion of testing the Hibernate method for update order
+2026-01-24 13:29:23.442 [main] INFO  com.example.task.ui.TechnicianAction - Start testing Hibernate method for creating technician records
+2026-01-24 13:29:23.464 [main] INFO  com.example.task.ui.TechnicianAction - Successfully created technicians with IDs: 23, 24
+2026-01-24 13:29:23.465 [main] INFO  com.example.task.ui.TechnicianAction - Testing existsById() method
+2026-01-24 13:29:23.469 [main] INFO  com.example.task.ui.TechnicianAction - Testing findById() method
+2026-01-24 13:29:23.471 [main] INFO  com.example.task.ui.TechnicianAction - Testing findAll() and sorting methods
+2026-01-24 13:29:23.480 [main] INFO  com.example.task.ui.TechnicianAction - Testing specific search methods
+2026-01-24 13:29:23.483 [main] INFO  com.example.task.ui.TechnicianAction - Testing update() method
+2026-01-24 13:29:23.489 [main] INFO  com.example.task.ui.TechnicianAction - Testing specific update methods
+2026-01-24 13:29:23.498 [main] INFO  com.example.task.ui.TechnicianAction - Testing delete() method
+2026-01-24 13:29:23.504 [main] INFO  com.example.task.ui.TechnicianAction - Cleaning up test data
+2026-01-24 13:29:24.497 [main] INFO  com.example.task.ui.CustomerAction - Start testing Hibernate method for creating customer records
+2026-01-24 13:29:24.509 [main] INFO  com.example.task.ui.CustomerAction - Successfully created customers with IDs: 23, 24
+2026-01-24 13:29:24.510 [main] INFO  com.example.task.ui.CustomerAction - Testing existsById() method
+2026-01-24 13:29:24.512 [main] INFO  com.example.task.ui.CustomerAction - Testing findById() method
+2026-01-24 13:29:24.513 [main] INFO  com.example.task.ui.CustomerAction - Testing findAll() and sorting methods
+2026-01-24 13:29:24.518 [main] INFO  com.example.task.ui.CustomerAction - Testing update() method
+2026-01-24 13:29:24.525 [main] INFO  com.example.task.ui.CustomerAction - Testing existsByName() method
+2026-01-24 13:29:24.566 [main] INFO  com.example.task.ui.CustomerAction - Testing delete() method
+2026-01-24 13:29:24.570 [main] INFO  com.example.task.ui.CustomerAction - Cleaning up test data
+2026-01-24 13:29:25.457 [main] INFO  com.example.task.ui.ServiceAdvisorAction - Start testing Hibernate method for creating service advisor records
+2026-01-24 13:29:25.471 [main] INFO  com.example.task.ui.ServiceAdvisorAction - Successfully created service advisors with IDs: 25, 26
+2026-01-24 13:29:25.471 [main] INFO  com.example.task.ui.ServiceAdvisorAction - Testing existsById() method
+2026-01-24 13:29:25.473 [main] INFO  com.example.task.ui.ServiceAdvisorAction - Testing findById() method
+2026-01-24 13:29:25.475 [main] INFO  com.example.task.ui.ServiceAdvisorAction - Testing findAll() and sorting methods
+2026-01-24 13:29:25.481 [main] INFO  com.example.task.ui.ServiceAdvisorAction - Testing update() method
+2026-01-24 13:29:25.486 [main] INFO  com.example.task.ui.ServiceAdvisorAction - Testing existsByName() method
+2026-01-24 13:29:25.490 [main] INFO  com.example.task.ui.ServiceAdvisorAction - Testing delete() method
+2026-01-24 13:29:25.493 [main] INFO  com.example.task.ui.ServiceAdvisorAction - Cleaning up test data
+2026-01-24 13:29:26.767 [main] ERROR com.example.task.dao.hibernate.AbstractHibernateDAO - Entity `com.example.task.model.CarPlace` with identifier value `1` does not exist
+2026-01-24 13:29:26.772 [main] INFO  com.example.task.ui.OrderAction - Testing the Hibernate method for creating an order record with technicians
+2026-01-24 13:29:26.779 [main] ERROR com.example.task.dao.hibernate.AbstractHibernateDAO - could not execute statement
+2026-01-24 13:29:26.779 [main] ERROR com.example.task.ui.OrderAction - Error saving order with technicians
+2026-01-24 13:29:26.779 [main] INFO  com.example.task.ui.OrderAction - Start of testing the Hibernate method for existing order record
+2026-01-24 13:29:26.783 [main] INFO  com.example.task.ui.OrderAction - Completion of testing the Hibernate method for existing order record
+2026-01-24 13:29:26.784 [main] INFO  com.example.task.ui.OrderAction - Start of testing the Hibernate method for finding order record
+2026-01-24 13:29:26.785 [main] ERROR com.example.task.dao.hibernate.AbstractHibernateDAO - id to load is required for loading
+2026-01-24 13:29:26.786 [main] ERROR com.example.task.ui.OrderAction - Error finding order by id: null
+2026-01-24 13:29:26.786 [main] INFO  com.example.task.ui.OrderAction - Completion of testing the Hibernate method for finding order record
+2026-01-24 13:29:26.786 [main] INFO  com.example.task.ui.OrderAction - Start of testing the Hibernate method for retrieval of all records
+2026-01-24 13:29:26.788 [main] ERROR com.example.task.dao.hibernate.AbstractHibernateDAO - Entity `com.example.task.model.CarPlace` with identifier value `1` does not exist
+2026-01-24 13:29:26.788 [main] ERROR com.example.task.ui.OrderAction - Error finding all orders
+2026-01-24 13:29:26.789 [main] INFO  com.example.task.ui.OrderAction - Completion of testing the Hibernate method for retrieval of all records
+2026-01-24 13:29:26.789 [main] INFO  com.example.task.ui.OrderAction - Start of testing the Hibernate method for specific order search methods
+2026-01-24 13:29:26.791 [main] ERROR com.example.task.dao.hibernate.AbstractHibernateDAO - Entity `com.example.task.model.CarPlace` with identifier value `2` does not exist
+2026-01-24 13:29:26.791 [main] ERROR com.example.task.ui.OrderAction - Error finding orders by status: PENDING
+2026-01-24 13:29:26.791 [main] INFO  com.example.task.ui.OrderAction - Completion of testing the Hibernate method for specific order search methods
+2026-01-24 13:29:26.791 [main] INFO  com.example.task.ui.OrderAction - Start of testing the Hibernate method for sorting order records
+2026-01-24 13:29:26.796 [main] ERROR com.example.task.dao.hibernate.AbstractHibernateDAO - Entity `com.example.task.model.CarPlace` with identifier value `4` does not exist
+2026-01-24 13:29:26.796 [main] ERROR com.example.task.ui.OrderAction - Error finding orders sorted by startDate
+2026-01-24 13:29:26.799 [main] ERROR com.example.task.dao.hibernate.AbstractHibernateDAO - Entity `com.example.task.model.CarPlace` with identifier value `4` does not exist
+2026-01-24 13:29:26.799 [main] ERROR com.example.task.ui.OrderAction - Error finding orders sorted by cost
+2026-01-24 13:29:26.799 [main] INFO  com.example.task.ui.OrderAction - Completion of testing the Hibernate method for sorting order records
+2026-01-24 13:29:26.799 [main] INFO  com.example.task.ui.OrderAction - Start of testing the Hibernate method for technician relations
+2026-01-24 13:29:26.799 [main] ERROR com.example.task.dao.hibernate.AbstractHibernateDAO - id to load is required for loading
+2026-01-24 13:29:26.799 [main] ERROR com.example.task.ui.OrderAction - Error adding technician to order
+2026-01-24 13:29:26.799 [main] INFO  com.example.task.ui.OrderAction - Completion of testing the Hibernate method for technician relations
+2026-01-24 13:29:26.800 [main] INFO  com.example.task.ui.OrderAction - Start of testing the Hibernate method for status update
+2026-01-24 13:29:26.800 [main] ERROR com.example.task.dao.hibernate.AbstractHibernateDAO - id to load is required for loading
+2026-01-24 13:29:26.800 [main] ERROR com.example.task.ui.OrderAction - Error finding order by id: null
+2026-01-24 13:29:26.800 [main] INFO  com.example.task.ui.OrderAction - Completion of testing the Hibernate method for status update
+2026-01-24 13:29:26.800 [main] INFO  com.example.task.ui.OrderAction - Start of testing the Hibernate method for time shift
+2026-01-24 13:29:26.800 [main] ERROR com.example.task.dao.hibernate.AbstractHibernateDAO - id to load is required for loading
+2026-01-24 13:29:26.801 [main] ERROR com.example.task.ui.OrderAction - Error finding order by id: null
+2026-01-24 13:29:26.801 [main] INFO  com.example.task.ui.OrderAction - Completion of testing the Hibernate method for time shift
+2026-01-24 13:29:26.801 [main] INFO  com.example.task.ui.OrderAction - Start of testing the Hibernate method for find orders by technician
+2026-01-24 13:29:26.805 [main] INFO  com.example.task.ui.OrderAction - Completion of testing the Hibernate method for find orders by technician
+2026-01-24 13:29:26.805 [main] INFO  com.example.task.ui.OrderAction - Start of testing the Hibernate method for date range search
+2026-01-24 13:29:26.807 [main] INFO  com.example.task.ui.OrderAction - Completion of testing the Hibernate method for date range search
+2026-01-24 13:29:26.807 [main] INFO  com.example.task.ui.OrderAction - Start of testing the Hibernate method for showing running orders.
+2026-01-24 13:29:26.810 [main] ERROR com.example.task.dao.hibernate.AbstractHibernateDAO - Entity `com.example.task.model.CarPlace` with identifier value `3` does not exist
+2026-01-24 13:29:26.810 [main] ERROR com.example.task.ui.OrderAction - Error finding IN_PROGRESS orders sorted by startDate
+2026-01-24 13:29:26.812 [main] ERROR com.example.task.dao.hibernate.AbstractHibernateDAO - Entity `com.example.task.model.CarPlace` with identifier value `3` does not exist
+2026-01-24 13:29:26.813 [main] ERROR com.example.task.ui.OrderAction - Error finding IN_PROGRESS orders sorted by cost
+2026-01-24 13:29:26.813 [main] INFO  com.example.task.ui.OrderAction - Completion of testing the Hibernate method for showing running orders
+2026-01-24 13:29:26.813 [main] INFO  com.example.task.ui.OrderAction - Start of testing the Hibernate method for update order.
+2026-01-24 13:29:26.813 [main] ERROR com.example.task.dao.hibernate.AbstractHibernateDAO - id to load is required for loading
+2026-01-24 13:29:26.813 [main] ERROR com.example.task.ui.OrderAction - Error finding order by id: null
+2026-01-24 13:29:26.813 [main] INFO  com.example.task.ui.OrderAction - Completion of testing the Hibernate method for update order

@@ -1,0 +1,6 @@
+id,name,specialization,isAvailable
+0,Brian Carter,Auto electrician,true
+1,Nathan Cole,Technical engineer,true
+2,Tim McCoy,Technical engineer,true
+3,Rita Sanders,Auto electrician,false
+4,George Smith,Technical engineer,true
