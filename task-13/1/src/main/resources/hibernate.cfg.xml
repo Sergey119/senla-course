@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <!-- Database connection settings -->
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/task-11</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">postgres</property>
+
+        <!-- Connection pool settings -->
+        <property name="hibernate.c3p0.min_size">5</property>
+        <property name="hibernate.c3p0.max_size">20</property>
+        <property name="hibernate.c3p0.timeout">300</property>
+        <property name="hibernate.c3p0.max_statements">50</property>
+
+        <!-- SQL output -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+
+        <!-- DDL generation -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Current session context -->
+        <property name="hibernate.current_session_context_class">thread</property>
+
+        <!-- Mapping files or annotated classes -->
+        <!-- Если используете hbm.xml файлы -->
+        <!-- <mapping resource="com/example/task/model/CarPlace.hbm.xml"/> -->
+
+        <!-- Если используете аннотации, нужно добавить классы в HibernateUtil -->
+
+    </session-factory>
+</hibernate-configuration>

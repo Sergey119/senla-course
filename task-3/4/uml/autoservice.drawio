@@ -1,0 +1,186 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 OPR/122.0.0.0" version="28.2.7">
+  <diagram name="Page-1" id="Ae2BE1U4HoDK210EOJng">
+    <mxGraphModel dx="2045" dy="1188" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8XOtWayXwXXoTzIbbcsQ-1181" value="Order" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1260" y="280" width="240" height="450" as="geometry" />
+        </mxCell>
+        <mxCell id="8XOtWayXwXXoTzIbbcsQ-1182" value="&lt;div&gt;- int : id&lt;/div&gt;&lt;div&gt;- serviceAdvisor : ServiceAdvisor&lt;/div&gt;&lt;div&gt;- technician : Technician&lt;/div&gt;&lt;div&gt;- customer : Customer&lt;/div&gt;&lt;div&gt;- carPlace : CarPlace&lt;/div&gt;&lt;div&gt;- status : OrderStatus&lt;/div&gt;&lt;div&gt;- createdDate : Date&lt;/div&gt;&lt;div&gt;- startDate : Date&lt;/div&gt;&lt;div&gt;- endDate : Date&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="8XOtWayXwXXoTzIbbcsQ-1181" vertex="1">
+          <mxGeometry y="26" width="240" height="144" as="geometry" />
+        </mxCell>
+        <mxCell id="8XOtWayXwXXoTzIbbcsQ-1183" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="8XOtWayXwXXoTzIbbcsQ-1181" vertex="1">
+          <mxGeometry y="170" width="240" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="8XOtWayXwXXoTzIbbcsQ-1184" value="&lt;div&gt;&lt;div&gt;+ getId() : int&lt;/div&gt;&lt;div&gt;+ getServiceAdvisor() : ServiceAdvisor&lt;/div&gt;&lt;div&gt;+ setServiceAdvisor(ServiceAdvisor) : void&lt;/div&gt;&lt;div&gt;+ getTechnician() : Technician&lt;/div&gt;&lt;div&gt;+ setTechnician(Technician) : void&lt;/div&gt;&lt;div&gt;+ getCustomer() : Customer&lt;/div&gt;&lt;div&gt;+ setCustomer(Customer) : void&lt;/div&gt;&lt;div&gt;+ getCarPlace() : CarPlace&lt;/div&gt;&lt;div&gt;+ setCarPlace(CarPlace) : void&lt;/div&gt;&lt;div&gt;+ getStatus() : OrderStatus&lt;/div&gt;&lt;div&gt;+ setStatus(OrderStatus) : void&lt;/div&gt;&lt;div&gt;+ getCreatedDate : Date&lt;/div&gt;&lt;div&gt;+ setCreatedDate(Date) : void&lt;/div&gt;&lt;div&gt;+ setStartDate(Date) : void&lt;/div&gt;&lt;div&gt;+ getStartDate() : Date&lt;/div&gt;&lt;div&gt;+ setEndDate(Date) : void&lt;/div&gt;&lt;div&gt;+ getEndDate() : Date&lt;/div&gt;&lt;div&gt;+ toString() : String&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="8XOtWayXwXXoTzIbbcsQ-1181" vertex="1">
+          <mxGeometry y="180" width="240" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="2crD_H92_mQmU4Xy8omi-3" value="Customer" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="980" y="280" width="240" height="140" as="geometry">
+            <mxRectangle x="3590" y="-120" width="90" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2crD_H92_mQmU4Xy8omi-4" value="&lt;div&gt;- int : id&lt;/div&gt;&lt;div&gt;- name : String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="2crD_H92_mQmU4Xy8omi-3">
+          <mxGeometry y="26" width="240" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="2crD_H92_mQmU4Xy8omi-5" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="2crD_H92_mQmU4Xy8omi-3">
+          <mxGeometry y="60" width="240" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="2crD_H92_mQmU4Xy8omi-6" value="&lt;div&gt;&lt;div&gt;&lt;div&gt;+ getId() : int&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ getName() : String&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;+ setName(&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;String&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;) : void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;+ toString() : String&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="2crD_H92_mQmU4Xy8omi-3">
+          <mxGeometry y="70" width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="2crD_H92_mQmU4Xy8omi-7" value="&lt;span style=&quot;text-align: left;&quot;&gt;CarPlace&lt;/span&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="280" width="240" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="2crD_H92_mQmU4Xy8omi-8" value="&lt;div&gt;- int : id&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;-&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;&amp;nbsp;&lt;/span&gt;square : int&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;-&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;carLift : boolean&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;-&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;isOccupied : boolean&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="2crD_H92_mQmU4Xy8omi-7">
+          <mxGeometry y="26" width="240" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="2crD_H92_mQmU4Xy8omi-9" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="2crD_H92_mQmU4Xy8omi-7">
+          <mxGeometry y="100" width="240" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="2crD_H92_mQmU4Xy8omi-10" value="&lt;div&gt;&lt;div&gt;+&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;getId() : int&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;getSquare() : int&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;setSquare(int) : void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;isCarLift() : boolean&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;setCarLift(boolean) : void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;isOccupied() : boolean&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;setOccupied(boolean) : void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ toString() : String&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="2crD_H92_mQmU4Xy8omi-7">
+          <mxGeometry y="110" width="240" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="2crD_H92_mQmU4Xy8omi-11" value="&lt;i&gt;Person&lt;/i&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="80" width="240" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="2crD_H92_mQmU4Xy8omi-12" value="&lt;div&gt;# int : id&lt;/div&gt;&lt;div&gt;# name : String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="2crD_H92_mQmU4Xy8omi-11">
+          <mxGeometry y="26" width="240" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="2crD_H92_mQmU4Xy8omi-13" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="2crD_H92_mQmU4Xy8omi-11">
+          <mxGeometry y="60" width="240" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="2crD_H92_mQmU4Xy8omi-14" value="&lt;div&gt;&lt;div&gt;+ getId() : int&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ getName() : String&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;+ setName(&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;String&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;) : void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="2crD_H92_mQmU4Xy8omi-11">
+          <mxGeometry y="70" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2crD_H92_mQmU4Xy8omi-15" value="ServiceAdvisor" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="280" width="240" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="2crD_H92_mQmU4Xy8omi-16" value="&lt;div&gt;- int : id&lt;/div&gt;&lt;div&gt;- name : String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="2crD_H92_mQmU4Xy8omi-15">
+          <mxGeometry y="26" width="240" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="2crD_H92_mQmU4Xy8omi-17" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="2crD_H92_mQmU4Xy8omi-15">
+          <mxGeometry y="60" width="240" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="2crD_H92_mQmU4Xy8omi-18" value="&lt;div&gt;&lt;div&gt;+ getId() : int&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ getName() : String&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;+ setName(&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;String&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;) : void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;+ toString() : String&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="2crD_H92_mQmU4Xy8omi-15">
+          <mxGeometry y="70" width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="2crD_H92_mQmU4Xy8omi-19" value="Technician" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="280" width="240" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="2crD_H92_mQmU4Xy8omi-20" value="&lt;div&gt;- int : id&lt;/div&gt;&lt;div&gt;- name : String&lt;/div&gt;&lt;div&gt;-&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;specialization : String&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- isAvailable : boolean&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="2crD_H92_mQmU4Xy8omi-19">
+          <mxGeometry y="26" width="240" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="2crD_H92_mQmU4Xy8omi-21" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="2crD_H92_mQmU4Xy8omi-19">
+          <mxGeometry y="100" width="240" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="2crD_H92_mQmU4Xy8omi-22" value="&lt;div&gt;&lt;div&gt;+ getId() : int&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ getName() : String&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;+ setName(&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;String&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;) : void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;getSpecialization() : String&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;setSpecialization(String) : void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;div style=&quot;&quot;&gt;+&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;isAvailable() : boolean&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;div style=&quot;&quot;&gt;+ setAvailable(boolean) : void&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ toString() : String&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="2crD_H92_mQmU4Xy8omi-19">
+          <mxGeometry y="110" width="240" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="2crD_H92_mQmU4Xy8omi-32" value="Autoservice" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="600" width="280" height="500" as="geometry">
+            <mxRectangle x="3590" y="-120" width="90" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2crD_H92_mQmU4Xy8omi-33" value="&lt;div&gt;- serviceAdvisar : List&amp;lt;ServiceAdvisar&amp;gt;&lt;/div&gt;&lt;div&gt;- technicians : List&amp;lt;Technicians&amp;gt;&lt;/div&gt;&lt;div&gt;- carPlaces : List&amp;lt;CarPlace&amp;gt;&lt;/div&gt;&lt;div&gt;- customers : List&amp;lt;Customer&amp;gt;&lt;/div&gt;&lt;div&gt;- orders : List&amp;lt;Order&amp;gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="2crD_H92_mQmU4Xy8omi-32">
+          <mxGeometry y="26" width="280" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="2crD_H92_mQmU4Xy8omi-34" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="2crD_H92_mQmU4Xy8omi-32">
+          <mxGeometry y="110" width="280" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="2crD_H92_mQmU4Xy8omi-35" value="&lt;div&gt;&lt;div&gt;+ initializeDefaultData () : void&lt;/div&gt;&lt;div&gt;+ getServiceAdvisors() : List&amp;lt;ServiceAdvisor&amp;gt;&lt;/div&gt;&lt;div&gt;+ setServiceAdvisors(List&amp;lt;ServiceAdvisor&amp;gt;) : void&lt;/div&gt;&lt;div&gt;+ getTechnicians() : List&amp;lt;Technician&amp;gt;&lt;/div&gt;&lt;div&gt;+ setTechnicians(List&amp;lt;Technician&amp;gt;) : void&lt;/div&gt;&lt;div&gt;+ addTechnician(Technician) : void&lt;/div&gt;&lt;div&gt;+ removeTechnician(Technician) : void&lt;/div&gt;&lt;div&gt;+ getCarPlaces() : List&amp;lt;CarPlace&amp;gt;&lt;/div&gt;&lt;div&gt;+ setCarPlaces(List&amp;lt;CarPlace&amp;gt;) : void&lt;/div&gt;&lt;div&gt;+ addCarPlace(CarPlace) : void&lt;/div&gt;&lt;div&gt;+ removeCarPlace(CarPlace) : void&lt;/div&gt;&lt;div&gt;+ getCustomers() : List&amp;lt;Customer&amp;gt;&lt;/div&gt;&lt;div&gt;+ setCustomers(List&amp;lt;Customer&amp;gt;) : void&lt;/div&gt;&lt;div&gt;+ getOrders() : List&amp;lt;Order&amp;gt;&lt;/div&gt;&lt;div&gt;+ setOrders(List&amp;lt;Order&amp;gt;) : void&lt;/div&gt;&lt;div&gt;+ addOrder(Order) : void&lt;/div&gt;&lt;div&gt;+ removeOrder(Order) : void&lt;/div&gt;&lt;div&gt;+ completeOrder(int) : void&lt;/div&gt;&lt;div&gt;+ cancelOrder(int) : void&lt;/div&gt;&lt;div&gt;+ shiftOrderTime(int, int) : void&lt;/div&gt;&lt;div&gt;- addDefaultOrder() : void&lt;/div&gt;&lt;div&gt;- addDefaultCustomer() : void&lt;/div&gt;&lt;div&gt;- addDefaultCarPlace(int) : void&lt;/div&gt;&lt;div&gt;- addDefaultServiceAdvisor() : void&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11.5px;&quot;&gt;- addDefaultTechnician(int, String, String) : void&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="2crD_H92_mQmU4Xy8omi-32">
+          <mxGeometry y="120" width="280" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="2crD_H92_mQmU4Xy8omi-36" value="" style="endArrow=block;html=1;rounded=0;entryX=0.5;entryY=1.012;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endFill=0;endSize=18;" edge="1" parent="1" source="2crD_H92_mQmU4Xy8omi-19" target="2crD_H92_mQmU4Xy8omi-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="650" y="300" as="sourcePoint" />
+            <mxPoint x="700" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2crD_H92_mQmU4Xy8omi-37" value="" style="endArrow=block;html=1;rounded=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;endFill=0;endSize=18;entryX=0.542;entryY=0.999;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="2crD_H92_mQmU4Xy8omi-3" target="2crD_H92_mQmU4Xy8omi-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="940" y="329" as="sourcePoint" />
+            <mxPoint x="860" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2crD_H92_mQmU4Xy8omi-38" value="" style="endArrow=block;html=1;rounded=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;endFill=0;endSize=18;entryX=0.458;entryY=0.999;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="2crD_H92_mQmU4Xy8omi-15" target="2crD_H92_mQmU4Xy8omi-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1130" y="290" as="sourcePoint" />
+            <mxPoint x="870" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2crD_H92_mQmU4Xy8omi-39" value="" style="endArrow=none;html=1;rounded=0;entryX=0.492;entryY=1.014;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;startArrow=diamondThin;startFill=1;startSize=24;" edge="1" parent="1" source="2crD_H92_mQmU4Xy8omi-32" target="2crD_H92_mQmU4Xy8omi-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="760" y="580" as="sourcePoint" />
+            <mxPoint x="810" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2crD_H92_mQmU4Xy8omi-40" value="" style="endArrow=diamondThin;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;endFill=1;endSize=24;" edge="1" parent="1" source="2crD_H92_mQmU4Xy8omi-10" target="2crD_H92_mQmU4Xy8omi-33">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="902" y="719" as="sourcePoint" />
+            <mxPoint x="670" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2crD_H92_mQmU4Xy8omi-41" value="" style="endArrow=diamondThin;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endFill=1;endSize=24;" edge="1" parent="1" source="8XOtWayXwXXoTzIbbcsQ-1184" target="2crD_H92_mQmU4Xy8omi-33">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="640" y="580" as="sourcePoint" />
+            <mxPoint x="1080" y="728" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2crD_H92_mQmU4Xy8omi-42" value="" style="endArrow=diamondThin;html=1;rounded=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;exitX=0.501;exitY=0.999;exitDx=0;exitDy=0;exitPerimeter=0;endFill=1;endSize=24;" edge="1" parent="1" source="2crD_H92_mQmU4Xy8omi-6" target="2crD_H92_mQmU4Xy8omi-32">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1320" y="640" as="sourcePoint" />
+            <mxPoint x="1040" y="713" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2crD_H92_mQmU4Xy8omi-43" value="" style="endArrow=diamondThin;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;endFill=1;endSize=24;" edge="1" parent="1" source="2crD_H92_mQmU4Xy8omi-22" target="2crD_H92_mQmU4Xy8omi-32">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="830" y="530" as="sourcePoint" />
+            <mxPoint x="850" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2crD_H92_mQmU4Xy8omi-44" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=open;startFill=0;startSize=18;" edge="1" parent="1" source="2crD_H92_mQmU4Xy8omi-7" target="8XOtWayXwXXoTzIbbcsQ-1181">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="710" y="480" as="sourcePoint" />
+            <mxPoint x="1340" y="170" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="260" y="40" />
+              <mxPoint x="1380" y="40" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2crD_H92_mQmU4Xy8omi-45" value="" style="endArrow=none;html=1;rounded=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=open;startFill=0;startSize=18;" edge="1" parent="1" source="2crD_H92_mQmU4Xy8omi-15" target="8XOtWayXwXXoTzIbbcsQ-1181">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="980" y="410" as="sourcePoint" />
+            <mxPoint x="2100" y="410" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="480" y="40" />
+              <mxPoint x="1380" y="40" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2crD_H92_mQmU4Xy8omi-46" value="" style="endArrow=none;html=1;rounded=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=open;startFill=0;startSize=18;" edge="1" parent="1" source="2crD_H92_mQmU4Xy8omi-3" target="8XOtWayXwXXoTzIbbcsQ-1181">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="280" as="sourcePoint" />
+            <mxPoint x="1470" y="230" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1160" y="40" />
+              <mxPoint x="1380" y="40" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2crD_H92_mQmU4Xy8omi-47" value="" style="endArrow=none;html=1;rounded=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=open;startFill=0;startSize=18;" edge="1" parent="1" source="2crD_H92_mQmU4Xy8omi-19" target="8XOtWayXwXXoTzIbbcsQ-1181">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1120" y="290" as="sourcePoint" />
+            <mxPoint x="1340" y="290" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1160" y="40" />
+              <mxPoint x="1380" y="40" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

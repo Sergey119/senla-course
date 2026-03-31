@@ -1,0 +1,234 @@
+2026-01-24 12:55:27.215 [main] WARN  org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table if exists "order" 
+       add constraint FK7h7fbqatcgvrorjugeykuhvn8 
+       foreign key (car_place_id) 
+       references car_place" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table if exists "order" 
+       add constraint FK7h7fbqatcgvrorjugeykuhvn8 
+       foreign key (car_place_id) 
+       references car_place" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:581)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:526)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:452)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:263)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:123)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:196)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:728)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:746)
+	at com.example.task.util.HibernateUtil.<clinit>(HibernateUtil.java:25)
+	at com.example.task.TaskApplication.main(TaskApplication.java:17)
+Caused by: org.postgresql.util.PSQLException: ОШИБКА: INSERT или UPDATE в таблице "order" нарушает ограничение внешнего ключа "fk7h7fbqatcgvrorjugeykuhvn8"
+  Подробности: Ключ (car_place_id)=(1) отсутствует в таблице "car_place".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:335)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:321)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:292)
+	at com.mchange.v2.c3p0.impl.NewProxyStatement.execute(NewProxyStatement.java:75)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 13 more
+2026-01-24 12:55:27.221 [main] WARN  org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table if exists "order" 
+       add constraint FK1oduxyuuo3n2g98l3j7754vym 
+       foreign key (customer_id) 
+       references customer" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table if exists "order" 
+       add constraint FK1oduxyuuo3n2g98l3j7754vym 
+       foreign key (customer_id) 
+       references customer" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:581)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:526)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:452)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:263)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:123)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:196)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:728)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:746)
+	at com.example.task.util.HibernateUtil.<clinit>(HibernateUtil.java:25)
+	at com.example.task.TaskApplication.main(TaskApplication.java:17)
+Caused by: org.postgresql.util.PSQLException: ОШИБКА: INSERT или UPDATE в таблице "order" нарушает ограничение внешнего ключа "fk1oduxyuuo3n2g98l3j7754vym"
+  Подробности: Ключ (customer_id)=(1) отсутствует в таблице "customer".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:335)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:321)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:292)
+	at com.mchange.v2.c3p0.impl.NewProxyStatement.execute(NewProxyStatement.java:75)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 13 more
+2026-01-24 12:55:27.225 [main] WARN  org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table if exists "order" 
+       add constraint FKdykxordxj34jneciw8vw0p9yq 
+       foreign key (service_advisor_id) 
+       references service_advisor" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table if exists "order" 
+       add constraint FKdykxordxj34jneciw8vw0p9yq 
+       foreign key (service_advisor_id) 
+       references service_advisor" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:581)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:526)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:452)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:263)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:123)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:196)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:728)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:746)
+	at com.example.task.util.HibernateUtil.<clinit>(HibernateUtil.java:25)
+	at com.example.task.TaskApplication.main(TaskApplication.java:17)
+Caused by: org.postgresql.util.PSQLException: ОШИБКА: INSERT или UPDATE в таблице "order" нарушает ограничение внешнего ключа "fkdykxordxj34jneciw8vw0p9yq"
+  Подробности: Ключ (service_advisor_id)=(3) отсутствует в таблице "service_advisor".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:335)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:321)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:292)
+	at com.mchange.v2.c3p0.impl.NewProxyStatement.execute(NewProxyStatement.java:75)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 13 more
+2026-01-24 12:55:29.553 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 23502
+2026-01-24 12:55:29.553 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - ОШИБКА: значение NULL в столбце "id" отношения "order" нарушает ограничение NOT NULL
+  Подробности: Ошибочная строка содержит (null, 24, 22, 14, PENDING, 10000, 2026-01-24 12:55:29.541796, 2026-01-25 12:55:29.541796, 2026-01-25 12:55:29.541796, 2026-01-26 12:55:29.541796).
+2026-01-24 13:29:15.269 [main] WARN  org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table if exists "order" 
+       add constraint FK7h7fbqatcgvrorjugeykuhvn8 
+       foreign key (car_place_id) 
+       references car_place" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table if exists "order" 
+       add constraint FK7h7fbqatcgvrorjugeykuhvn8 
+       foreign key (car_place_id) 
+       references car_place" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:581)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:526)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:452)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:263)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:123)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:196)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:728)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:746)
+	at com.example.task.util.HibernateUtil.<clinit>(HibernateUtil.java:25)
+	at com.example.task.TaskApplication.main(TaskApplication.java:17)
+Caused by: org.postgresql.util.PSQLException: ОШИБКА: INSERT или UPDATE в таблице "order" нарушает ограничение внешнего ключа "fk7h7fbqatcgvrorjugeykuhvn8"
+  Подробности: Ключ (car_place_id)=(1) отсутствует в таблице "car_place".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:335)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:321)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:292)
+	at com.mchange.v2.c3p0.impl.NewProxyStatement.execute(NewProxyStatement.java:75)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 13 more
+2026-01-24 13:29:15.274 [main] WARN  org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table if exists "order" 
+       add constraint FK1oduxyuuo3n2g98l3j7754vym 
+       foreign key (customer_id) 
+       references customer" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table if exists "order" 
+       add constraint FK1oduxyuuo3n2g98l3j7754vym 
+       foreign key (customer_id) 
+       references customer" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:581)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:526)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:452)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:263)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:123)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:196)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:728)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:746)
+	at com.example.task.util.HibernateUtil.<clinit>(HibernateUtil.java:25)
+	at com.example.task.TaskApplication.main(TaskApplication.java:17)
+Caused by: org.postgresql.util.PSQLException: ОШИБКА: INSERT или UPDATE в таблице "order" нарушает ограничение внешнего ключа "fk1oduxyuuo3n2g98l3j7754vym"
+  Подробности: Ключ (customer_id)=(1) отсутствует в таблице "customer".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:335)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:321)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:292)
+	at com.mchange.v2.c3p0.impl.NewProxyStatement.execute(NewProxyStatement.java:75)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 13 more
+2026-01-24 13:29:15.277 [main] WARN  org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table if exists "order" 
+       add constraint FKdykxordxj34jneciw8vw0p9yq 
+       foreign key (service_advisor_id) 
+       references service_advisor" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table if exists "order" 
+       add constraint FKdykxordxj34jneciw8vw0p9yq 
+       foreign key (service_advisor_id) 
+       references service_advisor" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:581)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:526)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:452)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:263)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:123)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:196)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:728)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:746)
+	at com.example.task.util.HibernateUtil.<clinit>(HibernateUtil.java:25)
+	at com.example.task.TaskApplication.main(TaskApplication.java:17)
+Caused by: org.postgresql.util.PSQLException: ОШИБКА: INSERT или UPDATE в таблице "order" нарушает ограничение внешнего ключа "fkdykxordxj34jneciw8vw0p9yq"
+  Подробности: Ключ (service_advisor_id)=(3) отсутствует в таблице "service_advisor".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:335)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:321)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:292)
+	at com.mchange.v2.c3p0.impl.NewProxyStatement.execute(NewProxyStatement.java:75)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 13 more
+2026-01-24 13:29:26.777 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 23502
+2026-01-24 13:29:26.778 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - ОШИБКА: значение NULL в столбце "id" отношения "order" нарушает ограничение NOT NULL
+  Подробности: Ошибочная строка содержит (null, 28, 26, 17, PENDING, 10000, 2026-01-24 13:29:26.774906, 2026-01-25 13:29:26.774906, 2026-01-25 13:29:26.774906, 2026-01-26 13:29:26.774906).
